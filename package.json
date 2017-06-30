@@ -1,0 +1,15 @@
+{
+    "name": "buildit-exercise-elm",
+    "version": "1.0.0",
+    "dependencies": {},
+    "repository": "https://github.com/nowamasa/buildit-exercise-elm.git",
+    "licence": "MIT",
+    "devDependencies": {
+        "express": "^4.15.3"
+    },
+    "scripts": {
+        "start": "node express-dev-server.js",
+        "compile": "elm-make src/Main.elm --output=public/dist/app.js",
+        "test": "elm-test"
+    }
+}

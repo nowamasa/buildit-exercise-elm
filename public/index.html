@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Buildit Exercise</title>
+    <link href="./dist/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-container">
+    <h1>Weather forecast</h1>
+    <div id="weather-viewer"></div>
+</div>
+<script src="./dist/app.js"></script>
+<script>
+    var payload = {
+        cityName: 'edinburgh',
+        countryCode: 'uk'
+    };
+    var div = document.getElementById('weather-viewer'); // get an empty <div>
+    Elm.Main.embed(div, payload); // embed our Elm program in that <div>
+</script>
+</body>
+</html>
